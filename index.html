@@ -224,7 +224,7 @@
                         <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature2.png" src="img/feature2.png" width="600" height="800" alt="Home"/>
                      </div>
                      <div
-                        class="scale-grid-item js-scale-ref">
+                        class="scale-grid-item js-scale-ref middlemobimg">
                         <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature3.png" src="img/feature4.png" width="600" height="400" alt="Home"/>
                      </div>
                      <div
@@ -271,7 +271,7 @@
                         <div class="tabitem"><span class="flex p-13 borderbtn px-35 text-face tab" data-tab="villa-3">Villa 3</span></div>
                      </li>
                   </ul>
-                  <div class="txt pr-20 s:pr-100 pl-40 s:pl-0">
+                  <div class="pdtextleft txt pr-20 s:pr-100 pl-40 s:pl-0">
                      <p>The lavish and spacious V2 Luxury Villas are located along the water body and overlook the lush green ‘Central Park’. These well-appointed homes are equipped with all the amenities to usher in a luxurious way of living and enjoy a wonderful spatial experience. Teamed with warm and inviting interiors, these dramatic high-ceiling homes with plenty of lounging spaces, will make you look forward to coming back home.</p>
                   </div>
                </div>
@@ -1400,5 +1400,69 @@
 	  });
 	});
 </script>
+<style>
+
+@media(max-width: 500px) {
+	.middlemobimg {
+		height: 550px !important;
+	}
+	.tabitem .tab.active {
+		background-color: #8A7968;
+		color: #fff;
+	}
+	.tabitem .tab {
+		border: 1px solid #8A7968;
+		border-radius: 51px;
+		opacity: 1;
+		margin-right: 10px;
+		color: #8A7968;
+	}
+	.pdtextleft {
+		padding-left: 0px !important;
+	}
+	ul.tabs {
+		padding-top: 5rem;
+	}
+	.interiorplates .bgback {
+    height: 100%;
+}
+
+.interiorplatesrow  h2.js-t-animation.text-white {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.interiorplatesrow .txt {
+    padding-left: 0px;
+}
+
+.interiorplatesinnr .tabitem .tab {
+    color: #fff !important;
+    border-color: #fff;
+    margin-bottom: 13px;
+}
+
+.interiorplatesinnr ul.tabs {
+    flex-wrap: wrap;
+}
+
+.imgcontent .px-20.col-span-12 {
+    display: none;
+}
+
+.imgcontent .px-20.col-span-12.s\:col-span-4.mb-2neg {
+    display: block;
+}
+
+.gutter .max-w-\[28rem\].s\:max-w-full {
+    max-width: 100%;
+}
+
+.gutter h2.font-heading.mb-110.s\:mb-36.text-50.s\:text-80.leading-\[1\.08\].tracking-\[-0\.03em\].js-t-animation {
+    margin: 20px 0;
+    font-size: 40px;
+}
+}
+</style>
 </body>
 </html>
