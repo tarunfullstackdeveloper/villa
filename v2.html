@@ -1,0 +1,1681 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+      <style>
+         @font-face {
+         font-family: meta-normal;
+         font-display: swap;
+         src: url('src/fonts/Meta-Normal-Font.woff2') format('woff2'), url('fonts/Meta-Normal-Font.woff') format('woff');
+         font-weight: 400;
+         font-style: normal
+         }
+         @font-face {
+         font-family: messina-sans;
+         font-display: swap;
+         src: url('src/fonts/MessinaSansWeb-Regular.woff2') format('woff2'), url('fonts/MessinaSansWeb-Regular.html') format('woff');
+         font-weight: 400;
+         font-style: normal
+         }
+         @font-face {
+         font-family: messina-sans;
+         font-display: swap;
+         src: url('src/fonts/MessinaSansWeb-SemiBold.woff2') format('woff2'), url('fonts/MessinaSansWeb-SemiBold.html') format('woff');
+         font-weight: 500;
+         font-style: normal
+         }
+         @font-face {
+         font-family: gt-sectra;
+         font-display: swap;
+         src: url('src/fonts/GT-Sectra-Display-Light-Italic.woff2') format('woff2'), url('fonts/GT-Sectra-Display-Light-Italic.html') format('woff');
+         font-weight: 200;
+         font-style: normal
+         }
+         @font-face {
+         font-family: gt-sectra;
+         font-display: swap;
+         src: url('src/fonts/GT-Sectra-Display-Light.woff2') format('woff2'), url('fonts/GT-Sectra-Display-Light.html') format('woff');
+         font-weight: 300;
+         font-style: normal
+         }
+      </style>
+      <title>YooVillas</title>
+      <link rel="stylesheet" href="dist/app-068693e1628f4fa1d5fa.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+<header class="fixed z-[98] w-full px-20 py-18 pointer-events-none">
+   <div class="nav-inner flex w-full justify-between">
+      <a href="index.html" aria-label="Discovery Builders" class="pointer-events-auto block mt-5 w-[7.8rem] s:w-[9.4rem]">
+		<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="254" height="76" viewBox="0 0 254 76" version="1.1"><path d="M 238.712 29.726 C 237.962 33.650, 238.916 35.589, 242.418 37.260 C 246.439 39.177, 247.904 38.366, 248.642 33.817 C 249.260 30.011, 248.763 29.553, 242.342 28.011 C 239.510 27.330, 239.136 27.507, 238.712 29.726 M 99.463 29.060 C 98.444 30.709, 109.973 57, 111.715 57 C 112.487 57, 112.840 57.450, 112.500 58 C 112.160 58.550, 112.639 59, 113.563 59 C 114.941 59, 115.021 58.730, 114.006 57.508 C 112.273 55.419, 112.179 38.395, 113.903 38.775 C 114.685 38.947, 114.852 38.575, 114.352 37.775 C 113.915 37.074, 113.478 35.983, 113.382 35.352 C 113.286 34.721, 112.594 32.921, 111.845 31.352 C 110.644 28.836, 109.877 28.465, 105.331 28.201 C 102.198 28.019, 99.898 28.356, 99.463 29.060 M 204.668 29.578 C 205.011 30.471, 204.690 31.574, 203.955 32.028 C 202.925 32.664, 203.465 33.941, 206.309 37.591 C 208.339 40.196, 210 42.869, 210 43.529 C 210 45.497, 206.024 49.946, 204.713 49.444 C 203.856 49.116, 203.486 50.593, 203.452 54.472 C 203.425 57.493, 203.756 59.410, 204.186 58.733 C 204.617 58.055, 204.976 57.853, 204.985 58.285 C 204.993 58.717, 205.873 58.603, 206.939 58.032 C 208.229 57.342, 209.086 57.330, 209.498 57.997 C 210.368 59.404, 218.349 59.251, 219.800 57.800 C 220.611 56.989, 221 52.356, 221 43.500 C 221 34.644, 220.611 30.011, 219.800 29.200 C 218.300 27.700, 210.777 27.623, 209.307 29.093 C 208.517 29.883, 207.638 29.876, 206.130 29.070 C 204.368 28.126, 204.141 28.205, 204.668 29.578 M 238.498 44.037 C 238.651 48.893, 238.390 50.006, 237.093 50.030 C 235.705 50.057, 235.693 50.174, 237 50.940 C 237.970 51.509, 238.472 53.265, 238.422 55.910 C 238.334 60.484, 239.296 60.933, 243.989 58.506 C 250.478 55.150, 252.198 46.942, 247.354 42.452 C 245.899 41.104, 244.099 39.944, 243.354 39.875 C 241.149 39.671, 240.558 39.506, 239.405 38.771 C 238.649 38.289, 238.368 39.920, 238.498 44.037" stroke="none" fill="#d3dee1" fill-rule="evenodd"/><path d="M 153.468 14.222 C 153.188 14.952, 153.081 25.213, 153.229 37.025 L 153.500 58.500 159 58.500 L 164.500 58.500 164.500 36 L 164.500 13.500 159.239 13.197 C 155.563 12.986, 153.824 13.295, 153.468 14.222 M 171.200 14.200 C 169.503 15.897, 169.503 56.103, 171.200 57.800 C 173.043 59.643, 181.652 59.349, 182.393 57.418 C 182.727 56.548, 183 46.910, 183 36 C 183 25.090, 182.727 15.452, 182.393 14.582 C 181.652 12.651, 173.043 12.357, 171.200 14.200 M 136.655 15.829 C 132.874 20.007, 135.754 27, 141.256 27 C 143.862 27, 148 23.012, 148 20.500 C 148 19.823, 147.067 18.084, 145.927 16.635 C 143.462 13.500, 139.105 13.121, 136.655 15.829 M 196.643 28.028 C 190.591 29.842, 186.905 35.465, 186.847 42.974 C 186.788 50.615, 189.297 55.890, 194.334 58.715 C 197.018 60.220, 203 60.376, 203 58.941 C 203 58.359, 203.449 58.159, 203.997 58.498 C 204.651 58.902, 204.673 58.271, 204.063 56.664 C 203.550 55.317, 203.360 53.340, 203.639 52.271 C 203.988 50.938, 203.338 49.796, 201.574 48.640 C 199.664 47.389, 199 46.097, 199 43.632 C 199 39.792, 202.028 36.413, 204.589 37.396 C 206.108 37.979, 206.102 37.805, 204.521 35.391 C 203.541 33.896, 203.192 32.477, 203.717 32.124 C 204.943 31.300, 206.252 27.726, 205.058 28.464 C 204.552 28.777, 203.856 28.575, 203.510 28.016 C 202.776 26.829, 200.631 26.833, 196.643 28.028 M 232.445 28.110 C 227.915 29.365, 224.800 33.169, 224.800 37.448 C 224.800 42.736, 228.147 45.822, 235.625 47.432 L 238.750 48.104 238.562 43.629 C 238.458 41.168, 237.784 38.445, 237.064 37.577 C 235.973 36.263, 235.999 36, 237.219 36 C 238.267 36, 238.702 34.780, 238.748 31.706 C 238.819 26.989, 238.060 26.556, 232.445 28.110 M 43.546 29.679 C 41.489 30.792, 40.477 30.932, 40.213 30.139 C 39.986 29.458, 37.449 29, 33.904 29 L 27.974 29 25.788 33.500 C 24.585 35.975, 23.331 38, 23 38 C 22.669 38, 21.415 35.975, 20.212 33.500 L 18.026 29 12.513 29 C 5.532 29, 5.505 29.629, 11.964 41.423 L 16.851 50.347 13.425 57.148 C 11.541 60.889, 10 64.434, 10 65.025 C 10 65.702, 12.130 65.989, 15.750 65.800 L 21.500 65.500 28 53.258 L 34.500 41.017 35.190 44.962 C 35.569 47.132, 36.363 49.810, 36.953 50.913 C 38.630 54.046, 44.465 58.039, 48.268 58.656 C 53.321 59.476, 60.451 56.045, 63.130 51.504 L 65.259 47.896 67.017 50.787 C 71.289 57.813, 78.210 60.337, 85.532 57.541 C 90.694 55.569, 93.564 52.333, 95.053 46.804 C 97.552 37.524, 89.923 28, 79.992 28 C 75.670 28, 69.449 31.431, 67.360 34.968 L 65.592 37.961 62.621 34.356 C 57.607 28.274, 49.717 26.339, 43.546 29.679 M 120.685 30.700 C 119.906 32.240, 118.722 35.188, 118.056 37.250 C 116.767 41.240, 115.593 41.987, 114.614 39.437 C 113.291 35.988, 112.508 39.268, 112.652 47.654 C 112.749 53.338, 112.392 56.802, 111.652 57.344 C 110.925 57.877, 111.134 57.986, 112.218 57.638 C 113.163 57.335, 114.202 57.518, 114.527 58.044 C 114.852 58.570, 116.249 59, 117.630 59 C 119.865 59, 120.808 57.599, 126.156 46.335 C 129.463 39.370, 132.243 32.508, 132.334 31.085 C 132.490 28.650, 132.199 28.483, 127.302 28.200 C 122.479 27.921, 122.001 28.101, 120.685 30.700 M 135.459 29.246 C 135.174 29.988, 135.067 36.875, 135.220 44.548 L 135.500 58.500 141 58.500 L 146.500 58.500 146.500 43.500 L 146.500 28.500 141.239 28.197 C 137.521 27.983, 135.826 28.291, 135.459 29.246 M 47 40 C 44.592 42.408, 44.553 42.917, 46.557 45.777 C 48.250 48.195, 51.891 48.709, 53.800 46.800 C 55.709 44.891, 55.195 41.250, 52.777 39.557 C 49.917 37.553, 49.408 37.592, 47 40 M 77.831 39.250 C 75.437 41.179, 75.006 43.563, 76.632 45.885 C 78.261 48.210, 81.922 48.678, 83.800 46.800 C 85.709 44.891, 85.195 41.250, 82.777 39.557 C 80.094 37.677, 79.805 37.659, 77.831 39.250 M 225.170 48.689 C 224.209 50.492, 223.665 53.443, 223.885 55.667 C 224.041 57.246, 231.782 59.928, 235.500 59.691 C 238.318 59.512, 238.494 59.258, 238.409 55.500 C 238.329 51.984, 237.966 51.394, 235.409 50.627 C 232.895 49.872, 229.099 48.368, 226.818 47.221 C 226.442 47.033, 225.701 47.693, 225.170 48.689" stroke="none" fill="#ebf4fa" fill-rule="evenodd"/></svg>
+
+      </a>
+      <div class="flex items-center justify-center pl-20 relative z-1 pointer-events-auto">
+         <div class="relative block">
+            <button type="button" aria-label="Toggle menu" class="js-toggle-menu block s:hidden menu-toggle s:w-full s:h-full flex flex-col s:flex-row s:items-center justify-between s:justify-center relative z-2">
+            <span class="menu-toggle__line h-[1px] s:h-[3.2rem] w-[3.2rem] s:w-[1px] bg-green transition-all duration-1000 ease-expo-out"></span>
+            <span class="menu-toggle__line h-[1px] s:h-[3.2rem] w-[3.2rem] s:w-[1px] bg-green my-5 s:my-0 s:mx-5 origin-bottom transition-all duration-1000 ease-expo-out"></span>
+            <span class="menu-toggle__line h-[1px] s:h-[3.2rem] w-[3.2rem] s:w-[1px] bg-green transition-all duration-1000 ease-expo-out"></span>
+            </button>
+         </div>
+      </div>
+      <nav class="hidden s:block">
+         <ul class="uppercase text-17 flex gap-x-28">
+            <li>
+               <a class="relative pointer-events-auto flex justify-center " href="">
+                  <span>Walkthrough</span>
+                  <svg class="absolute w-[2rem] h-[2rem] mt-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+                     <path d="M7.75,5.75l5.25,.73-5.2,.77,1.28,1.82-1.82-1.32-.78,5.25-.73-5.2-1.83,1.28,1.32-1.82L0,6.48l5.2-.73-1.28-1.82,1.83,1.28L6.48,0l.78,5.2,1.82-1.28-1.32,1.82Z"/>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a class="relative pointer-events-auto flex justify-center " href="">
+                  <span>Amenities</span>
+                  <svg class="absolute w-[2rem] h-[2rem] mt-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+                     <path d="M7.75,5.75l5.25,.73-5.2,.77,1.28,1.82-1.82-1.32-.78,5.25-.73-5.2-1.83,1.28,1.32-1.82L0,6.48l5.2-.73-1.28-1.82,1.83,1.28L6.48,0l.78,5.2,1.82-1.28-1.32,1.82Z"/>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a class="relative pointer-events-auto flex justify-center " href="">
+                  <span>Variants</span>
+                  <svg class="absolute w-[2rem] h-[2rem] mt-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+                     <path d="M7.75,5.75l5.25,.73-5.2,.77,1.28,1.82-1.82-1.32-.78,5.25-.73-5.2-1.83,1.28,1.32-1.82L0,6.48l5.2-.73-1.28-1.82,1.83,1.28L6.48,0l.78,5.2,1.82-1.28-1.32,1.82Z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</header>
+<div class="mobile-navigation fixed z-8 bg-[#EFC2B3] h-screen">
+   <nav class="mobile-navigation__inner h-full flex flex-wrap items-center justify-between px-20 py-20">
+      <div class="mt-auto">
+         <ul class="text-50 tracking-[-0.03em] mb-100 mt-auto mb-0 w-full leading-[1] font-heading text-left flex flex-wrap gap-x-28 pb-100">
+            <li class="w-full">
+               <a class="relative pointer-events-auto flex is-active italic" href=">
+               <span>Home</span>
+               </a>
+            </li>
+            <li class="w-full">
+               <a class="relative pointer-events-auto flex " href="">
+               <span>Walkthrough</span>
+               </a>
+            </li>
+            <li class="w-full">
+               <a class="relative pointer-events-auto flex " href="">
+               <span>Amenities</span>
+               </a>
+            </li>
+            <li class="w-full">
+               <a class="relative pointer-events-auto flex " href="">
+               <span>Variants</span>
+               </a>
+            </li>
+         </ul>
+         <div class="mt-auto mb-0">
+            <a class="inline-block uppercase text-16 ulinedouble" href="mailto:info@yoovillas.com">info@yoovillas.com</a>
+         </div>
+      </div>
+   </nav>
+</div>
+<div class="js-mask z-[99] fixed bg-[#EFC2B3] top-0 left-0 w-full h-full overflow-hidden">
+   <div class="js-mask__inner absolute top-0 left-0 right-0 h-full flex items-center justify-center">
+	  <svg class="w-[15rem] fill-current fillloading" xmlns="http://www.w3.org/2000/svg" width="254" height="76" viewBox="0 0 254 76" version="1.1"><path d="M 238.712 29.726 C 237.962 33.650, 238.916 35.589, 242.418 37.260 C 246.439 39.177, 247.904 38.366, 248.642 33.817 C 249.260 30.011, 248.763 29.553, 242.342 28.011 C 239.510 27.330, 239.136 27.507, 238.712 29.726 M 99.463 29.060 C 98.444 30.709, 109.973 57, 111.715 57 C 112.487 57, 112.840 57.450, 112.500 58 C 112.160 58.550, 112.639 59, 113.563 59 C 114.941 59, 115.021 58.730, 114.006 57.508 C 112.273 55.419, 112.179 38.395, 113.903 38.775 C 114.685 38.947, 114.852 38.575, 114.352 37.775 C 113.915 37.074, 113.478 35.983, 113.382 35.352 C 113.286 34.721, 112.594 32.921, 111.845 31.352 C 110.644 28.836, 109.877 28.465, 105.331 28.201 C 102.198 28.019, 99.898 28.356, 99.463 29.060 M 204.668 29.578 C 205.011 30.471, 204.690 31.574, 203.955 32.028 C 202.925 32.664, 203.465 33.941, 206.309 37.591 C 208.339 40.196, 210 42.869, 210 43.529 C 210 45.497, 206.024 49.946, 204.713 49.444 C 203.856 49.116, 203.486 50.593, 203.452 54.472 C 203.425 57.493, 203.756 59.410, 204.186 58.733 C 204.617 58.055, 204.976 57.853, 204.985 58.285 C 204.993 58.717, 205.873 58.603, 206.939 58.032 C 208.229 57.342, 209.086 57.330, 209.498 57.997 C 210.368 59.404, 218.349 59.251, 219.800 57.800 C 220.611 56.989, 221 52.356, 221 43.500 C 221 34.644, 220.611 30.011, 219.800 29.200 C 218.300 27.700, 210.777 27.623, 209.307 29.093 C 208.517 29.883, 207.638 29.876, 206.130 29.070 C 204.368 28.126, 204.141 28.205, 204.668 29.578 M 238.498 44.037 C 238.651 48.893, 238.390 50.006, 237.093 50.030 C 235.705 50.057, 235.693 50.174, 237 50.940 C 237.970 51.509, 238.472 53.265, 238.422 55.910 C 238.334 60.484, 239.296 60.933, 243.989 58.506 C 250.478 55.150, 252.198 46.942, 247.354 42.452 C 245.899 41.104, 244.099 39.944, 243.354 39.875 C 241.149 39.671, 240.558 39.506, 239.405 38.771 C 238.649 38.289, 238.368 39.920, 238.498 44.037" stroke="none" fill="#d3dee1" fill-rule="evenodd"/><path d="M 153.468 14.222 C 153.188 14.952, 153.081 25.213, 153.229 37.025 L 153.500 58.500 159 58.500 L 164.500 58.500 164.500 36 L 164.500 13.500 159.239 13.197 C 155.563 12.986, 153.824 13.295, 153.468 14.222 M 171.200 14.200 C 169.503 15.897, 169.503 56.103, 171.200 57.800 C 173.043 59.643, 181.652 59.349, 182.393 57.418 C 182.727 56.548, 183 46.910, 183 36 C 183 25.090, 182.727 15.452, 182.393 14.582 C 181.652 12.651, 173.043 12.357, 171.200 14.200 M 136.655 15.829 C 132.874 20.007, 135.754 27, 141.256 27 C 143.862 27, 148 23.012, 148 20.500 C 148 19.823, 147.067 18.084, 145.927 16.635 C 143.462 13.500, 139.105 13.121, 136.655 15.829 M 196.643 28.028 C 190.591 29.842, 186.905 35.465, 186.847 42.974 C 186.788 50.615, 189.297 55.890, 194.334 58.715 C 197.018 60.220, 203 60.376, 203 58.941 C 203 58.359, 203.449 58.159, 203.997 58.498 C 204.651 58.902, 204.673 58.271, 204.063 56.664 C 203.550 55.317, 203.360 53.340, 203.639 52.271 C 203.988 50.938, 203.338 49.796, 201.574 48.640 C 199.664 47.389, 199 46.097, 199 43.632 C 199 39.792, 202.028 36.413, 204.589 37.396 C 206.108 37.979, 206.102 37.805, 204.521 35.391 C 203.541 33.896, 203.192 32.477, 203.717 32.124 C 204.943 31.300, 206.252 27.726, 205.058 28.464 C 204.552 28.777, 203.856 28.575, 203.510 28.016 C 202.776 26.829, 200.631 26.833, 196.643 28.028 M 232.445 28.110 C 227.915 29.365, 224.800 33.169, 224.800 37.448 C 224.800 42.736, 228.147 45.822, 235.625 47.432 L 238.750 48.104 238.562 43.629 C 238.458 41.168, 237.784 38.445, 237.064 37.577 C 235.973 36.263, 235.999 36, 237.219 36 C 238.267 36, 238.702 34.780, 238.748 31.706 C 238.819 26.989, 238.060 26.556, 232.445 28.110 M 43.546 29.679 C 41.489 30.792, 40.477 30.932, 40.213 30.139 C 39.986 29.458, 37.449 29, 33.904 29 L 27.974 29 25.788 33.500 C 24.585 35.975, 23.331 38, 23 38 C 22.669 38, 21.415 35.975, 20.212 33.500 L 18.026 29 12.513 29 C 5.532 29, 5.505 29.629, 11.964 41.423 L 16.851 50.347 13.425 57.148 C 11.541 60.889, 10 64.434, 10 65.025 C 10 65.702, 12.130 65.989, 15.750 65.800 L 21.500 65.500 28 53.258 L 34.500 41.017 35.190 44.962 C 35.569 47.132, 36.363 49.810, 36.953 50.913 C 38.630 54.046, 44.465 58.039, 48.268 58.656 C 53.321 59.476, 60.451 56.045, 63.130 51.504 L 65.259 47.896 67.017 50.787 C 71.289 57.813, 78.210 60.337, 85.532 57.541 C 90.694 55.569, 93.564 52.333, 95.053 46.804 C 97.552 37.524, 89.923 28, 79.992 28 C 75.670 28, 69.449 31.431, 67.360 34.968 L 65.592 37.961 62.621 34.356 C 57.607 28.274, 49.717 26.339, 43.546 29.679 M 120.685 30.700 C 119.906 32.240, 118.722 35.188, 118.056 37.250 C 116.767 41.240, 115.593 41.987, 114.614 39.437 C 113.291 35.988, 112.508 39.268, 112.652 47.654 C 112.749 53.338, 112.392 56.802, 111.652 57.344 C 110.925 57.877, 111.134 57.986, 112.218 57.638 C 113.163 57.335, 114.202 57.518, 114.527 58.044 C 114.852 58.570, 116.249 59, 117.630 59 C 119.865 59, 120.808 57.599, 126.156 46.335 C 129.463 39.370, 132.243 32.508, 132.334 31.085 C 132.490 28.650, 132.199 28.483, 127.302 28.200 C 122.479 27.921, 122.001 28.101, 120.685 30.700 M 135.459 29.246 C 135.174 29.988, 135.067 36.875, 135.220 44.548 L 135.500 58.500 141 58.500 L 146.500 58.500 146.500 43.500 L 146.500 28.500 141.239 28.197 C 137.521 27.983, 135.826 28.291, 135.459 29.246 M 47 40 C 44.592 42.408, 44.553 42.917, 46.557 45.777 C 48.250 48.195, 51.891 48.709, 53.800 46.800 C 55.709 44.891, 55.195 41.250, 52.777 39.557 C 49.917 37.553, 49.408 37.592, 47 40 M 77.831 39.250 C 75.437 41.179, 75.006 43.563, 76.632 45.885 C 78.261 48.210, 81.922 48.678, 83.800 46.800 C 85.709 44.891, 85.195 41.250, 82.777 39.557 C 80.094 37.677, 79.805 37.659, 77.831 39.250 M 225.170 48.689 C 224.209 50.492, 223.665 53.443, 223.885 55.667 C 224.041 57.246, 231.782 59.928, 235.500 59.691 C 238.318 59.512, 238.494 59.258, 238.409 55.500 C 238.329 51.984, 237.966 51.394, 235.409 50.627 C 232.895 49.872, 229.099 48.368, 226.818 47.221 C 226.442 47.033, 225.701 47.693, 225.170 48.689" stroke="none" fill="#ebf4fa" fill-rule="evenodd"/></svg>
+      <div class="lds-ripple mx-auto">
+         <div></div>
+         <div></div>
+      </div>
+   </div>
+</div>
+<main role="main" itemscope itemprop="mainContentOfPage" data-taxi>
+   <article class="relative w-full" data-taxi-view="default">
+      <div class="js-overlay bg-black fixed top-0 left-0 right-0 bottom-0 z-3 pointer-events-none opacity-0"></div>
+      <div class="inner relative">
+         <div class="js-hero relative overflow-hidden">
+            <div class="relative px-20 flex items-center s:justify-center s:min-h-screen h-full-screen">
+               <div class="absolute z-1 top-0 left-0 w-full h-full bg-gradient-to-b from-[#CEE7EF] via-[#E4E4E4] to-[#EFC2B3]" data-speed="-0.2"></div>
+               <div class="h-full w-full absolute top-0 left-0 js-pr" data-speed="-0.35">
+                  <img class="absolute object-cover w-full h-full top-0 left-0" src="static/stone_leaf.jpg" alt="" decoding="async" draggable="false" loading="lazy">
+               </div>
+               <div class="absolute z-1 top-230 s:top-0 flex s:items-center justify-center left-0 w-full h-full js-pr" data-speed="-0.5">
+                  <div class="relative s:text-left w-full px-20 s:-mt-50">
+                     <h1 class="text-70 s:text-135 mb-40 s:mb-30 leading-[1] s:leading-[1.24] font-heading tracking-[-0.04em] js-heading">Elevate<br class="block s:hidden"> <span class="italic">your</span> escape</h1>
+                     <p class="text-24 s:text-28 leading-[1.2] s:max-w-[80rem] pb-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                  </div>
+               </div>
+               <img class="absolute object-cover w-full h-full top-0 left-0 z-1 js-pr" src="static/stone_leaf.png" alt="" draggable="false" loading="lazy" data-speed="-0.35">
+               <button type="button" aria-label="Go down" class="btn-circle hover:text-white absolute left-20 s:left-auto s:right-20 bottom-35 s:bottom-20 bg-white flex items-center justify-center rounded-full w-[4.2rem] h-[4.2rem] s:w-[6rem] s:h-[6rem] js-scroll-down">
+                  <div class="w-[1.2rem] s:w-[1.7rem]">
+                     <svg class="fill-current" width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8015 12.0654L9.35 19.3296L9.35 0L7.65 0L7.65 19.3296L1.1985 12.0654L1.16245e-08 13.4167L8.5 23L17 13.4167L15.8015 12.0654Z"/>
+                     </svg>
+                  </div>
+               </button>
+            </div>
+         </div>
+         <div class="w-full is-light px-20 relative overflow-hidden z-1 grid grid-cols-12 justify-end bg-face pt-50 pb-50 s:py-150 text-white">
+            <img class="pointer-events-none js-screen absolute z-1 top-0 left-0 w-full h-full object-cover" src="img/welcome.png" alt="Discovery Builders Pattern" draggable="false">
+            <div class="col-span-12 s:col-span-3 mb-auto s:mt-0 pb-50">
+               <div class="uppercase text-25 flex">
+                  <span class="block">Welcome to Yoo Villas</span>
+               </div>
+            </div>
+            <div class="col-span-12 s:col-span-7 mt-auto s:mt-0 s:pr-0">
+               <div class="text-25 s:text-25 leading-none s:leading-[0.5] s:leading-[0.6] font-heading mb-0 tracking-[-0.03em] js-text-reavel">
+                  Home to one of India’s largest expat populations, Pune is a culturally rich and diverse cosmopolitan city teeming with local flavours and great heritage. Soon emerging into a global hub for business, technology and lifestyle, Pune is seeing high volume of investments in each of these sectors. A culture capital that boasts a pleasant weather year round, nestled in the Western Ghats, the city will charm you with an air of creativity and originality. Long revered for its excellence in education, the city is dawning a new role as the nest for entrepreneurial minds with a boom in the IT commercial space. At Panchshil, our vision has always centred on bringing the very best of the world to Pune, and with Kelly’s icon style and her ‘east meets west’ design philosophy, we offer the finest of lifestyles in yoovillas.
+               </div>
+            </div>
+         </div>
+         <div class="w-full is-light relative overflow-hidden z-1 grid">
+            <img class="pointer-events-none js-screen relative z-1 top-0 left-0 w-full h-full object-cover" src="img/videoposter.jpg" alt="Discovery Builders Pattern" draggable="false">
+         </div>
+
+         <div class="relative bg-white w-full mt-auto s:pt-60  pt-70">
+            <div class="px-20 relative overflow-hidden z-1 grid grid-cols-12 justify-between pt-20 s:pt-60 pb-60 s:pt-60">
+               <div class="col-span-12 s:col-span-6">
+                  <div class="uppercase text-25 flex">
+                     <span class="block ">NEARBY LOCATION FINDER</span>
+                  </div>
+                  <h2 class="js-t-animation pt-120 s:pt-0 pb-10 text-50 s:text-80 font-heading leading-none tracking-[-0.03em] max-w-[30rem] s:max-w-full">Central Proximity, Prime Appreciation</h2>
+               </div>
+               <div class="col-span-12 s:col-span-5 order-2 s:order-1">
+                  <div class="pdtextleft txt pr-20 s:pr-100 pl-40 s:pl-0">
+                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5816026172306!2d73.96229347372119!3d18.547800068344863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1064da46bad%3A0xe6d958c42fa854a7!2sYOO%20Villas%20-%20Wagholi!5e0!3m2!1sen!2sin!4v1732537485933!5m2!1sen!2sin" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="relative bg-white w-full mt-auto s:pt-160  pt-70">
+            <div class="t-n-t gutter">
+               <div class="uppercase w-full mt-auto justify-center text-12 flex relative s:text-center">
+                   Features & Amenities
+               </div>
+               <div class="relative s:text-center text-center">
+                  <h2 class="pt-50 text-35 s:text-54 font-heading leading-none tracking-[-0.04em] breaker js-t-animation">
+                      Features & Amenities
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <div class="s:pt-0">
+            <div class="scale-grid js-scale-grid px-20 s:px-0">
+               <div class="scale-grid-wrap overflow-hidden">
+                  <div class="scale-grid-content js-scale">
+                     <div
+                        class="scale-grid-item js-counter hidden s:block">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature1.png" src="img/feature1.png" width="600" height="398" alt="Home"/>
+                     </div>
+                     <div
+                        class="scale-grid-item js-counter hidden s:block">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature2.jpg" src="img/feature2.jpg" width="600" height="800" alt="Home"/>
+                     </div>
+                     <div
+                        class="scale-grid-item js-scale-ref middlemobimg">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/interior.jpg" src="img/interior.jpg" width="600" height="400" alt="Home"/>
+                     </div>
+                     <div
+                        class="scale-grid-item js-counter hidden s:block">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature4.jpg" src="img/feature4.jpg" width="600" height="800" alt="Home"/>
+                     </div>
+                     <div
+                        class="scale-grid-item js-counter hidden s:block">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature5.jpg" src="img/feature5.jpg" width="600" height="450" alt="Home"/>
+                     </div>
+                     <div
+                        class="scale-grid-item js-counter hidden s:block">
+                        <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover js-lazy" data-src="img/feature6.jpg" src="img/feature6.jpg" width="600" height="450" alt="Home"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="w-full is-light px-40 relative overflow-hidden z-1 grid grid-cols-12 justify-end bg-face pt-50 pb-50 s:py-150 text-white">
+            <img class="pointer-events-none js-screen absolute z-1 top-0 left-0 w-full h-full object-cover" src="img/welcome.png" alt="Discovery Builders Pattern" draggable="false">
+            <div class="col-span-12 mt-auto s:mt-0 s:pr-0 relative pl-60 pt-60">
+               <svg xmlns="http://www.w3.org/2000/svg" class="quoteicon absolute z-1 top-0 left-0" width="327.318" height="286.403" viewBox="0 0 327.318 286.403" style="width: auto;">
+                  <path id="quote_icon" data-name="quote icon" d="M30.686,2.25h81.83A30.694,30.694,0,0,1,143.2,32.936v81.83a30.694,30.694,0,0,1-30.686,30.686H61.372v40.915a40.953,40.953,0,0,0,40.915,40.915H107.4a15.306,15.306,0,0,1,15.343,15.343V273.31A15.306,15.306,0,0,1,107.4,288.653h-5.114A102.259,102.259,0,0,1,0,186.366V32.936A30.694,30.694,0,0,1,30.686,2.25Zm184.116,0h81.83a30.694,30.694,0,0,1,30.686,30.686v81.83a30.694,30.694,0,0,1-30.686,30.686H245.489v40.915A40.953,40.953,0,0,0,286.4,227.281h5.114a15.306,15.306,0,0,1,15.343,15.343V273.31a15.306,15.306,0,0,1-15.343,15.343H286.4A102.259,102.259,0,0,1,184.116,186.366V32.936A30.694,30.694,0,0,1,214.8,2.25Z" transform="translate(0 -2.25)" fill="#fff" opacity="0.23"/>
+               </svg>
+               <div class="text-100 s:text-100  leading-[1.2] s:leading-[1.2] font-heading mb-0 tracking-[-0.03em] js-text-reavel text-center">
+                  WE DESIGN MAGNIFICENT SPACES THAT ENRICH PEOPLE'S LIVES IN EVERY POSSIBLE WAY
+               </div>
+               <h3 class="text-30 s:text-30  leading-[1.2] s:leading-[1.2] font-heading text-center mt-50">-JOHN HITCHCOX, FOUNDER YOO</h3>
+            </div>
+         </div>
+         <div class="varianttabs relative bg-white w-full mt-auto">
+            <div class="px-20 relative overflow-hidden z-1 grid grid-cols-12 justify-between pt-20 s:pt-200 pb-20 s:pt-200">
+               <div class="col-span-12 s:col-span-6">
+                  <div class="uppercase text-25 flex">
+                     <span class="block ">Variants</span>
+                  </div>
+                  <ul class="featurekeybd">
+                     <li>
+                        <div class="linnr">
+                           <div class="libox">
+                              <div class="icon">
+                                 <img class="mx-auto" src="img/Configuration.png" alt="Configuration">
+                              </div>
+                              <div class="licntnt">
+                                 <p>
+                                    Configuration: 4BHK
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="linnr">
+                           <div class="libox">
+                              <div class="icon">
+                                 <img class="mx-auto" src="img/CarpetArea.png" alt="CarpetArea">
+                              </div>
+                              <div class="licntnt">
+                                 <p>
+                                    Carpet Area: 477.67sq.m
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="linnr">
+                           <div class="libox">
+                              <div class="icon">
+                                 <img class="mx-auto" src="img/CoveredParking.png" alt="Covered-Parking">
+                              </div>
+                              <div class="licntnt">
+                                 <p>
+                                    Covered Parking: 02
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="linnr">
+                           <div class="libox">
+                              <div class="icon">
+                                 <img class="mx-auto" src="img/StaffQuarters.png" alt="Staff Quarters">
+                              </div>
+                              <div class="licntnt">
+                                 <p>
+                                    Staff Quarters: 01
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-span-12 s:col-span-5 order-2 s:order-1">
+                  <h2 class="js-t-animation pt-120 s:pt-0 pb-10 text-50 s:text-80 font-heading leading-none tracking-[-0.03em] max-w-[30rem] s:max-w-full">Yoo Villa Variants</h2>
+                  <ul class="tabs flex mb-20 pb-20">
+                     <li>
+                        <div class="tabitem"><span class="flex p-13 active borderbtn px-35 text-face tab" data-villa="villa-2">Villa 2</span></div>
+                     </li>
+                     <li>
+                        <div class="tabitem"><span class="flex p-13 borderbtn px-35 text-face tab" data-villa="villa-3">Villa 3</span></div>
+                     </li>
+                  </ul>
+                  <div class="pdtextleft txt pr-20 s:pr-100 pl-40 s:pl-0">
+                     <p>The lavish and spacious V2 Luxury Villas are located along the water body and overlook the lush green ‘Central Park’. These well-appointed homes are equipped with all the amenities to usher in a luxurious way of living and enjoy a wonderful spatial experience. Teamed with warm and inviting interiors, these dramatic high-ceiling homes with plenty of lounging spaces, will make you look forward to coming back home.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+		 <div id="villa-2" class="villa-content">
+			<div class="relative bg-white w-full overflow-hidden pt-20 s:pt-100">
+				<div class="-mx-200 s:-mx-100 pt-40 s:pt-0">
+				<div class="fillslider pt-60">
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.0">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa1.jpg" src="img/v2/villa1.jpg" width="1440" height="1920" alt="Stevens Media Room 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.1">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa2.jpg" src="img/v2/villa2.jpg" width="1440" height="1920" alt="Stevens Bath 19"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa3.jpg" src="img/v2/villa3.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa4.jpg" src="img/v2/villa4.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa5.jpg" src="img/v2/villa5.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa6.jpg" src="img/v2/villa6.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa7.jpg" src="img/v2/villa7.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+               
+					<div class="slide-item pl-20">
+						<div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+							<div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+							<figure
+								class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+								<img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa8.jpg" src="img/v2/villa8.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+							</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="villa-3" class="villa-content" style="display: none;"> 
+		   <div class="relative bg-white w-full overflow-hidden pt-20 s:pt-100">
+			   <div class="-mx-200 s:-mx-100 pt-40 s:pt-0">
+			   <div class="fillslider pt-60">
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.0">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa1.jpg" src="img/v3/villa1.jpg" width="1440" height="1920" alt="Stevens Media Room 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.1">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa2.jpg" src="img/v3/villa2.jpg" width="1440" height="1920" alt="Stevens Bath 19"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa3.jpg" src="img/v3/villa3.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa4.jpg" src="img/v3/villa4.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa5.jpg" src="img/v3/villa5.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa6.jpg" src="img/v3/villa6.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="slide-item pl-20">
+					   <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.2">
+						   <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+						   <figure
+							   class="overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+							   <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa7.jpg" src="img/v3/villa7.jpg" width="1440" height="1920" alt="Stevens Living 3"/>
+						   </figure>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+			   </div>
+		   </div>
+	   </div>
+      
+      <div class="varianttabs aminitiessec relative bg-white w-full mt-auto pt-72">
+            <div class=" max-w-[100rem] mx-auto pt-40">
+               <div class="uppercase text-25 flex">
+                  <span class="block text-center mx-auto">Aminities</span>
+               </div>
+               <h2 class="js-t-animation pt-120 s:pt-0 pb-10 text-50 s:text-80 text-center font-heading leading-none tracking-[-0.03em] max-w-[30rem] s:max-w-full">Features &  Aminities</h2>
+               <div class="pdtextleft txt pr-20 s:pr-100 pl-40 s:pl-0 text-center">
+                  <p>The lavish and spacious V2 Luxury Villas are located along the water body and overlook the lush green ‘Central Park’. These well-appointed homes are equipped with all the amenities to usher in a luxurious way of living and enjoy a wonderful spatial experience. Teamed with warm and inviting interiors, these dramatic high-ceiling homes with plenty of lounging spaces, will make you look forward to coming back home.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+		<div id="Aminities"> 
+		   <div class="relative bg-white w-full overflow-hidden pt-20 s:pt-100 px-60">
+			   <div class="-mx-200 s:-mx-100 pt-10 s:pt-0" style="    width: 100%;margin: 0 auto;">
+			   <div class="fillimageslider pt-20 pb-60">
+               <div class="slide">
+                  <div class="slide-item pl-20">
+                     <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.0">
+                        <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+                        <figure
+                           class="figurwcap overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+                           <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v2/villa2.jpg" src="img/v2/villa2.jpg" width="1440" height="1920" alt="Stevens Media Room 3"/>
+                           <div class="caption">Exterior</div>
+                        </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="slide-item pl-20">
+                     <div class="w-full overflow-hidden js-s-image-mask" data-delay="0.1">
+                        <div class="overflow-hidden js-image-mask w-full h-full" style="margin-top: 0rem">
+                        <figure
+                           class="figurwcap overflow-hidden h-full min-h-[32rem] max-h-[32rem] s:min-h-[80rem] s:max-h-[80rem] relative js-image-scale">
+                           <img class="w-full absolute top-0 left-0 js-lazy" data-src="img/v3/villa1.jpg" src="img/v3/villa1.jpg" width="1440" height="1920" alt="Stevens Bath 19"/>
+                           <div class="caption">Interior</div>
+                        </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+			   </div>
+			   </div>
+		   </div>
+	   </div>
+	   <section class="interiorplates relative">
+			<img class="pointer-events-none bgback js-screen absolute z-1 top-0 left-0 w-full h-full object-cover" src="img/interiorbg.png" alt="Discovery Builders Pattern" draggable="false">
+			<div class="interiorplatesinnr ">
+				<div class="interiorplatesrow pt-70 pb-40 px-40">
+					<div class="grid grid-cols-12">
+						<div class="col-span-12 s:col-span-8">
+							<div class="uppercase text-25 flex">
+								<span class="block text-white">Lorem Ipsum</span>
+							</div>
+							<h2 class="js-t-animation text-white pt-120 s:pt-0 pb-10 text-60 s:text-80 font-heading leading-none tracking-[-0.03em] max-w-[30rem] s:max-w-full">INTERIOR PALETTES</h2>
+							<div class="txt text-22 pr-20 s:pr-100 pl-40 s:pl-0 text-white leading-[1.5]">
+								<p class="">You can choose from our select range of interiors designed by Britain’s most celebrated interior designer, Kelly Hoppen MBE. Hoppen’s collaboration with YOO offers residents of yoovillas a fusion of simplicity with a balance of sumptuous textures and luxurious finishes. We offer you three unique interior style options, each of which reflects Kelly’s ever-evolving original style, underpinned by clean lines and neutral tones, blended with charming launch and sumptuous opulence.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="urbantabs px-20 relative overflow-hidden z-1 grid grid-cols-12 justify-end pt-20">
+					<div class="col-span-12 s:col-span-5"></div>
+					<div class="col-span-12 s:col-span-5">
+						<ul class="tabs flex mb-20 pb-20">
+							<li>
+							   <div class="tabitem"><span  data-image="urban" class="flex p-13 active borderbtn px-35 text-white border-face tab">Urban</span></div>
+							</li>
+							<li>
+							   <div class="tabitem"><span  data-image="breeze" class="flex p-13 borderbtn px-35 text-white border-face tab">See Breeze</span></div>
+							</li>
+							<li>
+							   <div class="tabitem" ><span data-image="vintage" class="flex p-13 borderbtn px-35 text-white border-face tab">Vintage</span></div>
+							</li>
+						 </ul>
+						 <div class="contentgrp text-white leading-[1.5] mb-40">
+							<p>The Urban Palette is created using taupe stone, dark timber flooring as well as delectable plaster finishes and textiles, which makes for an interior rooted in minimalism and evincing class. The fine-tuned and idiosyncratic approach, accorded with feature lighting weaves timeless elegance in the marrow of the interior. The linear muted tones and use of repeated motifs is Kelly Hoppen's trademark for YOO's bespoke work that reflects panache.</p>
+						 </div>
+					</div>
+				</div>
+				<div id="urban" class="imgcontent">
+					<div class="relative z-1 flex justify-center pt-20 pb-70">
+						<div class="px-20 col-span-12 s:col-span-4 mb-2neg">
+							<div class="image">
+								<img src="img/urban1.png" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4 mt-20">
+							<div class="image">
+								<img src="img/urban2.png" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4  mt-50 pt-30">
+							<div class="image">
+								<img src="img/urban3.png" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="breeze" class="imgcontent" style="display: none;">
+					<div class="relative z-1 flex justify-center pt-20 pb-70">
+						<div class="px-20 col-span-12 s:col-span-4 mb-2neg">
+							<div class="image">
+								<img src="img/breeze1.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4 mt-20">
+							<div class="image">
+								<img src="img/breeze2.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4  mt-50 pt-30">
+							<div class="image">
+								<img src="img/breeze3.jpg" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="vintage" class="imgcontent" style="display: none;">
+					<div class="relative z-1 flex justify-center pt-20 pb-70">
+						<div class="px-20 col-span-12 s:col-span-4 mb-2neg">
+							<div class="image">
+								<img src="img/vintage-1.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4 mt-20">
+							<div class="image">
+								<img src="img/vintage-2.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="px-20 col-span-12 s:col-span-4  mt-50 pt-30">
+							<div class="image">
+								<img src="img/vintage-3.jpg" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	   </section>
+         
+         <aside class="globe-popup fixed inset-0 flex items-center justify-center z-[9999] invisible js-globe-modal">
+            <div class="absolute inset-0 bg-black/40 pointer-events-auto js-global-modal-bg"></div>
+            <div class="globe-popup__content relative w-full flex flex-col s:flex-row max-w-[92.7rem] h-full s:h-[60rem]">
+               <button type="button" class="absolute top-0 right-0 p-16 z-2 pointer-events-auto js-globe-modal-close">
+                  <svg class="w-[5rem] h-[5rem] s:h-[3.7rem] s:w-[3.7rem]" viewbox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                     <line x1="23.8496" y1="13.9497" x2="13.9502" y2="23.8492" stroke="#10312B"/>
+                     <line x1="13.9512" y1="13.9497" x2="23.8507" y2="23.8492" stroke="#10312B"/>
+                  </svg>
+               </button>
+               <div class="relative w-full s:w-[52.7rem] h-[45rem] s:h-full flex items-end px-35 s:px-55 py-45 shrink-0 bg-white js-globe-modal-content">
+                  <div class="absolute inset-0 z-1">
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45  js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Dubai, UAE</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Discovery Dunes</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           39.08629948516978° N /
+                           -120.1605391° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">The Hamptons, New York</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">The Hills Golf Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           40.881163° N /
+                           -72.677565° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">West Hampton Beach, New York</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Dune Deck Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           40.8093799° N /
+                           -72.6458277° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://dunedeckclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Perthshire, Scotland</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Taymouth Castle</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           56.595999° N /
+                           -3.979470° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Lake Tahoe, California</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Homewood Mountain and Lake Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           39.08629948516978° N /
+                           -120.1605391° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Naples, Florida</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Naples Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           26.137667° N /
+                           -81.807056° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Guanacaste, Costa Rica</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Zapotal Golf &amp; Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           9.998076° N /
+                           -85.305086° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://zapotalbeachclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Kauai, Hawaii</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">North Shore Preserve</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           22.211566° N /
+                           -159.448008° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://northshorepreserve.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">BC</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">James Island</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           -123.342998628° N /
+                           48.602830922° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Comporta, Portugal</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">CostaTerra Golf &amp; Ocean Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           38.198750° N /
+                           -8.764298° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://costaterraclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Barbuda, West Indies</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Barbuda Ocean Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           17.549884° N /
+                           -61.765587° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://barbudaoceanclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Austin, Texas</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Driftwood Golf &amp; Ranch Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           30.139339° N /
+                           -98.022342° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://driftwoodgolfclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Nashville, Tennessee</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Troubadour Golf &amp; Field Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           35.828904° N /
+                           -86.679158° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://thetroubadourclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Rio San Juan, Dominican Republic</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Playa Grande Golf &amp; Ocean Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           19.676976° N /
+                           -70.034601° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://www.playagrande.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Cabo San Lucas, Mexico</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Chileno Bay Golf &amp; Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           22.954708° N /
+                           -109.816218° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://chilenobayclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Los Cabos, Mexico</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">El Dorado Golf &amp; Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           26.047947° N /
+                           -109.799287° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://eldoradobeachclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Las Vegas, Nevada</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">The Summit Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           36.10804° N /
+                           -115.349337° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://summitclubnv.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Amenia, New York</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Silo Ridge Field Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           41.834259° N /
+                           -73.571259° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://siloridge.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Maui, Hawaii</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Mākena Golf &amp; Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           20.690308° N /
+                           -156.440582° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://makenagolfandbeachclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Big Sky, Montana</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Yellowstone Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           45.245981° N /
+                           -111.374457° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://yellowstoneclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Coeur dAlene, Idaho</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Gozzer Ranch Golf &amp; Lake Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           47.617997° N /
+                           -116.766169° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#E889A2] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           Construction Management
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://gozzerranchclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">La Quinta, CA</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">The Madison Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           33.660962° N /
+                           -116.244456° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://madisonclubca.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">La Quinta, CA</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Hideaway Golf Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           33.667059° N /
+                           -116.260879° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://www.hideawaygolfclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Great Guana Cay, Bahamas</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Bakers Bay Golf &amp; Ocean Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           26.686966° N /
+                           -77.146015° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://bakersbayclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Cashiers, North Carolina</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Mountaintop Golf &amp; Lake Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           35.106704° N /
+                           -83.097106° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Scottsdale, Arizona</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Mirabel Golf Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           33.823760° N /
+                           -111.851592° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://www.mirabel.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Kohala, Hawaii</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Kūki&#039;o Golf &amp; Beach Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           19.817312° N /
+                           -155.998547° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://www.kukio.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Westlake, Texas</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Vaquero Golf Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           32.965190° N /
+                           -97.194715° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://www.vaqueroclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Whitefish, Montana</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">Iron Horse Golf Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           48.449344° N /
+                           -114.347434° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://ironhorsegolfclub.com/" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Silicon Valley, CA</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">CordeValle Golf Club &amp; Lodge</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           37.067811° N /
+                           -121.632827° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://discoverylandco.com/communities/cordevalle-golf-club-and-lodge" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                     <article class="globe-slide absolute inset-0 px-35 s:px-55 py-45 invisible js-slide">
+                        <span class="inline-flex text-16 leading-[1.5] js-slide-item">Scottsdale, Arizona</span>
+                        <h2 class="text-40 s:text-54 leading-[1.1] font-heading mt-20 s:mt-25 js-slide-item js-slide-title">The Estancia Club</h2>
+                        <div class="flex items-center text-14 uppercase leading-[1.5] mt-35 s:mt-50 js-slide-item">
+                           <svg class="h-[2.4rem] w-auto mr-10" viewbox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.6429 8.57143C16.6429 10.8215 15.8261 13.3062 14.3517 15.8841C12.9479 18.3384 10.9625 20.8515 8.57143 23.2895C6.18036 20.8515 4.19494 18.3384 2.79116 15.8841C1.31672 13.3062 0.5 10.8215 0.5 8.57143C0.5 4.1137 4.1137 0.5 8.57143 0.5C13.0292 0.5 16.6429 4.1137 16.6429 8.57143Z" stroke="#10312B"/>
+                           </svg>
+                           33.738105° N /
+                           -111.865240° W
+                        </div>
+                        <div class="flex items-center text-14 mt-20 s:mt-30 js-slide-item">
+                           <span class="bg-[#47952C] w-[1rem] h-[1rem] rounded-full mr-15"></span>
+                           General Contractor
+                        </div>
+                        <div class="js-slide-item">
+                           <a href="https://discoverylandco.com/communities/the-estancia-club" target="_blank" class="ulinedouble inline-block mt-30 s:mt-40">Visit site</a>
+                        </div>
+                     </article>
+                  </div>
+                  <nav class="relative z-2 flex items-center">
+                     <button type="button" class="mr-20 pointer-events-auto js-previous" aria-label="Previous">
+                        <svg class="h-[1.7rem] w-auto" viewbox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.9346 1.1985L3.67042 7.65L23 7.65L23 9.35L3.67042 9.35L10.9346 15.8015L9.58333 17L3.71547e-07 8.5L9.58333 -5.98086e-07L10.9346 1.1985Z" fill="#10312B"/>
+                        </svg>
+                     </button>
+                     <button type="button" class="pointer-events-auto js-next" aria-label="Next">
+                        <svg class="h-[1.7rem] w-auto" viewbox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12.0654 1.1985L19.3296 7.65L-4.08701e-07 7.65L-3.34392e-07 9.35L19.3296 9.35L12.0654 15.8015L13.4167 17L23 8.5L13.4167 -5.98086e-07L12.0654 1.1985Z" fill="#10312B"/>
+                        </svg>
+                     </button>
+                  </nav>
+               </div>
+               <div class="z-1 relative flex-1 shrink-1 js-globe-modal-figs">
+                  <div class="absolute inset-0 z-1">
+                     <figure class="absolute inset-0 media-fill  js-image">
+                        <img class="js-lazy" alt="Discovery Dunes" data-src="/imager/images/19997/Screen-Shot-2023-05-15-at-2.56.25-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19997/Screen-Shot-2023-05-15-at-2.56.25-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="The Hills Golf Club" data-src="/imager/images/19617/Screen-Shot-2023-04-21-at-10.15.56_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19617/Screen-Shot-2023-04-21-at-10.15.56_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="341" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Dune Deck Beach Club" data-src="/imager/images/6648/dunedeck-Map2_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6648/dunedeck-Map2_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Taymouth Castle" data-src="/imager/images/19999/Screen-Shot-2023-05-15-at-3.11.51-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19999/Screen-Shot-2023-05-15-at-3.11.51-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Homewood Mountain and Lake Club" data-src="/imager/images/19529/Screen-Shot-2023-04-21-at-10.10.02_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19529/Screen-Shot-2023-04-21-at-10.10.02_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="312" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Naples Beach Club" data-src="/imager/images/19968/Screen-Shot-2023-05-15-at-12.16.38-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19968/Screen-Shot-2023-05-15-at-12.16.38-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="411" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Zapotal Golf &amp; Beach Club" data-src="/imager/images/19971/Screen-Shot-2023-05-15-at-12.22.18-PM_2023-05-15-193421_jocj_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19971/Screen-Shot-2023-05-15-at-12.22.18-PM_2023-05-15-193421_jocj_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="449" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="North Shore Preserve" data-src="/imager/images/5662/PV-AERIALS-0501_map_500x750_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/5662/PV-AERIALS-0501_map_500x750_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="450" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="James Island" data-src="/imager/images/19973/Screen-Shot-2023-05-15-at-12.39.23-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19973/Screen-Shot-2023-05-15-at-12.39.23-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="CostaTerra Golf &amp; Ocean Club" data-src="/imager/images/19975/Screen-Shot-2023-05-15-at-12.43.31-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19975/Screen-Shot-2023-05-15-at-12.43.31-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="450" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Barbuda Ocean Club" data-src="/imager/images/19977/Screen-Shot-2023-05-15-at-12.47.54-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19977/Screen-Shot-2023-05-15-at-12.47.54-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="449" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Driftwood Golf &amp; Ranch Club" data-src="/imager/images/19859/Screen-Shot-2023-05-15-at-11.17.28-AM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19859/Screen-Shot-2023-05-15-at-11.17.28-AM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Troubadour Golf &amp; Field Club" data-src="/imager/images/19979/Screen-Shot-2023-05-15-at-12.55.06-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19979/Screen-Shot-2023-05-15-at-12.55.06-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Playa Grande Golf &amp; Ocean Club" data-src="/imager/images/19981/Screen-Shot-2023-05-15-at-1.54.19-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19981/Screen-Shot-2023-05-15-at-1.54.19-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Chileno Bay Golf &amp; Beach Club" data-src="/imager/images/5848/Chileno-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/5848/Chileno-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="El Dorado Golf &amp; Beach Club" data-src="/imager/images/5879/Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/5879/Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="The Summit Club" data-src="/imager/images/5910/summit-Map_190718_114312_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/5910/summit-Map_190718_114312_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Silo Ridge Field Club" data-src="/imager/images/5941/Silo-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/5941/Silo-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Mākena Golf &amp; Beach Club" data-src="/imager/images/19985/Screen-Shot-2023-05-15-at-2.26.28-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19985/Screen-Shot-2023-05-15-at-2.26.28-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="448" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Yellowstone Club" data-src="/imager/images/19987/Screen-Shot-2023-05-15-at-2.30.28-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19987/Screen-Shot-2023-05-15-at-2.30.28-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Gozzer Ranch Golf &amp; Lake Club" data-src="/imager/images/19983/Screen-Shot-2023-05-15-at-2.16.30-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19983/Screen-Shot-2023-05-15-at-2.16.30-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="The Madison Club" data-src="/imager/images/19989/Screen-Shot-2023-05-15-at-2.38.35-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19989/Screen-Shot-2023-05-15-at-2.38.35-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Hideaway Golf Club" data-src="/imager/images/6156/hideaway3-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6156/hideaway3-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Bakers Bay Golf &amp; Ocean Club" data-src="/imager/images/19991/Screen-Shot-2023-05-15-at-2.44.38-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19991/Screen-Shot-2023-05-15-at-2.44.38-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Mountaintop Golf &amp; Lake Club" data-src="/imager/images/6218/Mountaintop-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6218/Mountaintop-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Mirabel Golf Club" data-src="/imager/images/19993/Screen-Shot-2023-05-15-at-2.47.10-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19993/Screen-Shot-2023-05-15-at-2.47.10-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Kūki&#039;o Golf &amp; Beach Club" data-src="/imager/images/6310/Kukio-Map_190729_200030_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6310/Kukio-Map_190729_200030_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="450" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Vaquero Golf Club" data-src="/imager/images/6341/Vaquero-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6341/Vaquero-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="Iron Horse Golf Club" data-src="/imager/images/19995/Screen-Shot-2023-05-15-at-2.53.46-PM_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/19995/Screen-Shot-2023-05-15-at-2.53.46-PM_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="463" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="CordeValle Golf Club &amp; Lodge" data-src="/imager/images/6403/Cordevalle-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6403/Cordevalle-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                     <figure class="absolute inset-0 media-fill invisible js-image">
+                        <img class="js-lazy" alt="The Estancia Club" data-src="/imager/images/6494/Estancia-Map_7a9742b1f3984c49c8f80ca5690bf2a4.jpg" src="imager/images/6494/Estancia-Map_1ef12a7276dd256ee8c93f7dafc7573b.jpg" width="300" height="590" alt="Home"/>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <div class="px-20 hidden">
+            <hr>
+         </div>
+         <div class="gutter pt-30 s:pt-40">				
+			<div class="text-25 flex">
+				<span class="block">Lorem Ipsum</span>
+			</div>
+            <div class="max-w-[28rem] s:max-w-full">
+               <h2 class="font-heading mb-110 s:mb-36 text-50 s:text-80 leading-[1.08] tracking-[-0.03em] js-t-animation">About Panchshil</h2>
+               <div class="txt max-w-[90rem]">
+                  <p class="mb-0">Established in 2002, Panchshil Realty is one of India's finest luxury real estate developers. Renowned for its leadership and excellence in real estate development, the company has successfully delivered over 28 million sq. ft. of prime real estate, with another 17.5 million sq. ft. under development across multiple asset classes. Panchshil's portfolio spans across office parks, high-end residential developments, luxury hotels and retail malls. The company’s developments comprise some key landmarks of ‘Tomorrow’s Pune’, such as India’s first Trump branded residences – Trump Towers Pune, yoopune by Philippe Starck and John Hitchcox, EON Free Zone in Kharadi, International Convention Centre, World Trade Center Pune, and an award-winning built-to-suit office campus for Cummins India amongst others.</p>
+                  
+               </div>
+            </div>
+         </div>
+         <a href="" target="_blank" rel="noreferrer" aria-label="Visit DLC website" class="block next-case px-20 pb-20 w-full mt-40 s:mt-0">
+            <div class="block justify-between">
+               <figure class="relative w-full s:w-[40%] h-[45rem] ml-auto featurelastimg" style="margin-bottom: -8rem;z-index: 1;">
+                  <img class="w-full h-full absolute top-0 left-0 insert-0 object-cover slider-image js-lazy" data-src="img/feature5.png" src="img/feature5.png" width="300" height="185" alt="Home" />
+               </figure>
+            </div>
+         </a>
+         <footer class="w-full bg-face relative text-white overflow-hidden is-light flex flex-col h-screen s:h-auto">
+            <div class="js-foot relative px-20 pt-60 pb-30 h-full">
+               <img class="pointer-events-none js-screen absolute z-1 top-0 left-0 w-full h-full object-cover" src="img/enquiry.png" alt="Discovery Builders Pattern" draggable="false">
+               <div class="enquirybox">
+				<div class="headingBox mb-50">
+					<h2 class="text-50 s:text-50 text-white text-left px-60">Enquiry Form</h2>
+				</div>
+				<div class="boxinnr">
+					<div class="grid grid-cols-12">
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-user-circle" aria-hidden="true"></i>
+								<input type="text" placeholder="First Name">
+							</div>
+						</div>
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-user-circle" aria-hidden="true"></i>
+								<input type="text" placeholder="Last Name">
+							</div>
+						</div>
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<input type="text" placeholder="Email ID">
+							</div>
+						</div>
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<input type="text" placeholder="Contact No.">
+							</div>
+						</div>
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-home" aria-hidden="true"></i>
+								<select name="" id="">
+									<option value="Select-Villa">Select Villa</option>
+									<option value="Urban">Urban</option>
+									<option value="Vintage">Vintage</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-span-12 s:col-span-6 px-60">
+							<div class="input">
+								<i class="fa fa-comments" aria-hidden="true"></i>
+								<input type="text" placeholder="Comment">
+							</div>
+						</div>
+					</div>
+					<div class="buttonsubmit mt-50 mb-50 text-center">
+						<button type="submit">Submit From</button>
+					</div>
+					<hr>
+				</div>
+				<div class="footerright pb-30 pt-30 flex justify-between items-center">
+					<div class="s:col-span-6">
+						<ul class="flex footermenu">
+							<li><a href="">Project Financed by Standard Chattered</a></li>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Disclaimer</a></li>
+						</ul>
+					</div>
+					<div class="s:col-span-4">
+						<div class="codesocial flex" style="    align-items: center;">
+							<div class="orcode">
+								<img src="img/barcode.png" alt="QR" width="60">
+							</div>
+							<ul class="flex">
+								<li class="pr-20 pl-20"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+								<li class="pr-20"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li class="pr-20"><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			   </div>
+            </div>
+         </footer>
+      </div>
+   </article>
+</main>
+<div class="villamodal" style="display: none;">
+	<div class="popupcontent">
+		<div class="popupinnr">
+			<div class="close">
+				<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+					width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<g>
+						<path d="M65.206,36.688c-0.781-0.781-2.047-0.781-2.828,0l-9.899,9.899l-9.9-9.899c-0.781-0.781-2.047-0.781-2.828,0
+							c-0.781,0.781-0.781,2.047,0,2.828l9.9,9.899l-9.9,9.899c-0.781,0.781-0.781,2.047,0,2.828c0.391,0.391,0.902,0.586,1.414,0.586
+							s1.023-0.195,1.414-0.586l9.9-9.899l9.899,9.899c0.391,0.391,0.902,0.586,1.414,0.586s1.023-0.195,1.414-0.586
+							c0.781-0.781,0.781-2.047,0-2.828l-9.899-9.899l9.899-9.899C65.987,38.735,65.987,37.468,65.206,36.688z"/>
+						<path d="M76.18,25.8C69.861,19.481,61.459,16,52.522,16S35.185,19.48,28.865,25.8c-13.045,13.045-13.045,34.271,0,47.315
+							c6.318,6.319,14.721,9.8,23.657,9.8c8.938,0,17.34-3.48,23.659-9.8c6.319-6.318,9.799-14.721,9.799-23.658
+							C85.979,40.521,82.499,32.119,76.18,25.8z M73.354,70.287c-5.564,5.563-12.962,8.628-20.831,8.628
+							c-7.868,0-15.266-3.064-20.829-8.628c-11.485-11.485-11.485-30.174,0-41.659C37.258,23.064,44.654,20,52.522,20
+							s15.266,3.064,20.829,8.627s8.628,12.961,8.629,20.83C81.98,57.326,78.917,64.724,73.354,70.287z"/>
+					</g>
+				</svg>
+			</div>
+			<div class="imageslider">
+				<div class="imgslide">
+					<img src="img/feature5.png" alt="feature5">
+				</div>
+				<div class="imgslide">
+					<img src="img/feature3.png" alt="feature3">
+				</div>
+				<div class="imgslide">
+					<img src="img/villa2.png" alt="villa2">
+				</div>
+			</div>
+			<div class="popcntnt">
+				<h2 class="text-70 s:text-70">Living Room</h2>
+				<p class="text-24 s:text-24">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fixed inset-0 z-[100] pointer-events-none js-pe"></div>
+<div class="contactfix">
+    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> CONTACT</a>
+</div>    
+<script type="text/javascript" src="dist/app-f1a7d0c2235b21cbe978.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+   $('.fillslider').slick({
+   	dots: false,
+   	arrows: true,
+   	infinite: false,
+   	slidesToShow: 2,
+   	slidesToScroll: 1,
+   	responsive: [
+   		{
+   			breakpoint: 1024,
+   			settings: {
+   				slidesToShow: 2,
+   				slidesToScroll: 2,
+   				infinite: false, // Set to false if infinite scrolling is not desired
+   				dots: true
+   			}
+   		},
+   		{
+   			breakpoint: 600,
+   			settings: {
+   				slidesToShow: 2,
+   				slidesToScroll: 2
+   			}
+   		},
+   		{
+   			breakpoint: 480,
+   			settings: {
+   				slidesToShow: 1,
+   				slidesToScroll: 1
+   			}
+   		}
+   	]
+   });
+   $('.imageslider').slick({
+		dots: false,
+		arrows: true,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+   $('.fillimageslider').slick({
+		dots: false,
+		arrows: true,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+      infinite: true,variableWidth: false,
+	});
+</script>
+<script>
+	$(document).ready(function() {
+	  $('.varianttabs .tab').click(function() {
+		// Remove active class from all tabs and add to the clicked tab
+		$('.varianttabs .tab').removeClass('active');
+		$(this).addClass('active');
+  
+		// Hide all villa contents and show the selected one
+		$('.villa-content').hide();
+		$('#' + $(this).data('villa')).show();      
+      $('.fillslider').slick('refresh');
+	  });
+	});
+	$(document).ready(function() {
+	  $('.urbantabs .tab').click(function() {
+		// Remove active class from all tabs and add to the clicked tab
+		$('.urbantabs .tab').removeClass('active');
+		$(this).addClass('active');
+  
+		// Hide all villa contents and show the selected one
+		$('.imgcontent').hide();
+		$('#' + $(this).data('image')).show();  
+	  });
+	});
+   $(window).on('scroll', function() {
+      const scrollPosition = $(this).scrollTop();
+      const element = $('header');
+
+      if (scrollPosition > 150) {
+         element.addClass('scrolled');  // Add class when scrolled > 150px
+      } else {
+         element.removeClass('scrolled');  // Remove class when scrolled < 150px
+      }
+   });
+
+</script>
+<style>
+header.scrolled {
+    background: rgb(255 255 255 / 40%);
+}
+.is-light header.scrolled {
+    background: rgb(0 0 0 / 40%);
+}
+.contactfix {
+    position: fixed;
+    top: 50%;
+    font-size: 22px;
+    right: 0;
+    z-index: 9;
+    color: #fff;
+    background: #6B5C4E;
+    padding: 8px;
+    height: 55px;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .contactfix a i {
+        padding: 10px;
+        background: #8A7968;
+        margin-right: 10px;
+    }
+    ul.featurekeybd {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+   }
+
+   ul.featurekeybd li {
+      width: 50%;
+      text-align: center;
+      padding: 7rem 0 0;
+   }
+
+   ul.featurekeybd li .icon img {
+      margin: -1px auto 2rem;
+      filter: brightness(0.5) invert(1);
+   }
+
+   ul.featurekeybd li p {
+      color: #8A7968;
+   }
+@media(max-width: 500px) {
+	.middlemobimg {
+		height: 550px !important;
+	}
+   ul.featurekeybd {
+      width: 100%;
+   }
+	.tabitem .tab.active {
+		background-color: #8A7968;
+		color: #fff;
+	}
+	.tabitem .tab {
+		border: 1px solid #8A7968;
+		border-radius: 51px;
+		opacity: 1;
+		margin-right: 10px;
+		color: #8A7968;
+	}
+	.pdtextleft {
+		padding-left: 0px !important;
+	}
+	ul.tabs {
+		padding-top: 5rem;
+	}
+	.interiorplates .bgback {
+    height: 100%;
+}
+
+.interiorplatesrow  h2.js-t-animation.text-white {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.interiorplatesrow .txt {
+    padding-left: 0px;
+}
+
+.interiorplatesinnr .tabitem .tab {
+    color: #fff !important;
+    border-color: #fff;
+    margin-bottom: 13px;
+}
+
+.interiorplatesinnr ul.tabs {
+    flex-wrap: wrap;
+}
+
+.imgcontent .px-20.col-span-12 {
+    display: none;
+}
+
+.imgcontent .px-20.col-span-12.s\:col-span-4.mb-2neg {
+    display: block;
+}
+
+.gutter .max-w-\[28rem\].s\:max-w-full {
+    max-width: 100%;
+}
+
+.gutter h2.font-heading.mb-110.s\:mb-36.text-50.s\:text-80.leading-\[1\.08\].tracking-\[-0\.03em\].js-t-animation {
+    margin: 20px 0;
+    font-size: 40px;
+}
+}
+.tab {
+   cursor: pointer;
+}
+.enquirybox .boxinnr .input {
+    border: 1px solid #fff;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.enquirybox .boxinnr .input input, .enquirybox .boxinnr .input select {
+    margin-top: 0px !important;
+}
+footer {
+    border-bottom: 20px solid #6B5C4E;
+}
+.fillimageslider  img {
+   width: 100%; height: 100%; object-fit: cover;
+}
+.figurwcap .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    font-size: 3rem;
+    color: #fff;
+    background: rgb(138 121 104 / 74%);
+    padding: 2rem 3rem;
+}
+</style>
+</body>
+</html>
