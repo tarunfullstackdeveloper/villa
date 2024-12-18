@@ -141,7 +141,7 @@
                <div class="h-full w-full absolute top-0 left-0 js-pr" data-speed="-0.35">
                   <img class="absolute object-cover w-full h-full top-0 left-0" src="img/welcomebanner.jpg" alt="" decoding="async" draggable="false" loading="lazy">
                </div>
-               <div class="absolute z-1 top-230 s:top-0 flex s:items-center justify-center left-0 w-full h-full js-pr" data-speed="-0.5" style="background-image: url('img/welcomebanner.jpg');background-position: center;background-size: cover;">
+               <div class="welcomebanner absolute z-1 top-230 s:top-0 flex s:items-center justify-center left-0 w-full h-full js-pr" data-speed="-0.5" style="background-image: url('img/welcomebanner.jpg');background-position: center;background-size: cover;">
                   <div class="relative s:text-left w-full px-20 s:-mt-50">
                      <h1 class="text-70 s:text-135 mb-40 s:mb-30 leading-[1] s:leading-[1.24] font-heading tracking-[-0.04em] js-heading text-white">Elevate<br class="block s:hidden"> <span class="italic">your</span> Escape</h1>
                      <p class="text-24 s:text-28 leading-[1.2] s:max-w-[80rem] pb-50 text-white">Redefine luxury living with modern comfort and nature&#39;s serenity. Experience avant-garde design, flawless amenities, and a lifestyle that lets you embrace tranquility and sophistication.</p>
@@ -175,7 +175,7 @@
             <img class="pointer-events-none js-screen relative z-1 top-0 left-0 w-full h-full object-cover" src="img/videoposter.jpg" alt="Discovery Builders Pattern" draggable="false">
          </div>
 
-         <div class="relative bg-white w-full mt-auto s:pt-60  pt-70">
+         <div class="relative bg-white w-full mt-auto s:pt-60  pt-70 locationfindersec">
             <div class="px-20 relative overflow-hidden z-1 grid grid-cols-12 justify-between pt-20 s:pt-60 pb-60 s:pt-60">
                <div class="col-span-12 s:col-span-6">
                   <div class="uppercase text-25 flex">
@@ -298,7 +298,7 @@
                </div>
             </div>
          </div>
-         <div class="relative bg-white w-full mt-auto s:pt-160  pt-70">
+         <div class="relative featureamentities bg-white w-full mt-auto s:pt-160  pt-70">
             <div class="t-n-t gutter">
                <div class="uppercase w-full mt-auto justify-center text-12 flex relative s:text-center">
                    Features & Amenities
@@ -311,7 +311,7 @@
             </div>
          </div>
          <div class="s:pt-0">
-            <div class="scale-grid js-scale-grid px-20 s:px-0">
+            <div class="mobilemargin scale-grid js-scale-grid px-20 s:px-0">
                <div class="scale-grid-wrap overflow-hidden">
                   <div class="scale-grid-content js-scale">
                      <div
@@ -342,7 +342,7 @@
                </div>
             </div>
          </div>
-         <div class="w-full is-light px-40 relative overflow-hidden z-1 grid grid-cols-12 justify-end bg-face pt-50 pb-50 s:py-150 text-white">
+         <div class="reviewcontent w-full is-light px-40 relative overflow-hidden z-1 grid grid-cols-12 justify-end bg-face pt-50 pb-50 s:py-150 text-white">
             <img class="pointer-events-none js-screen absolute z-1 top-0 left-0 w-full h-full object-cover" src="img/pallet.png" alt="Discovery Builders Pattern" draggable="false">
             <div class="col-span-12 mt-auto s:mt-0 s:pr-0 relative pl-60 pt-60">
                <svg xmlns="http://www.w3.org/2000/svg" class="quoteicon absolute z-1 top-0 left-0" width="327.318" height="286.403" viewBox="0 0 327.318 286.403" style="width: auto;">
@@ -1564,16 +1564,47 @@
 </div>    
 
 <script>
-   function initMap() {
-       // Map options
-       const options = {
-           zoom: 8,
-           center: { lat: 18.5679, lng: 73.9864 } // San Francisco, for example
-       };
-       // Create the map
-       const map = new google.maps.Map(document.getElementById('map'), options);
-   }
-</script>
+        function initMap() {
+            // Map options
+            const options = {
+                zoom: 15, // Closer zoom level
+                center: { lat: 18.5679, lng: 73.9864 } // Coordinates for the location
+            };
+
+            // Create the map
+            const map = new google.maps.Map(document.getElementById('map'), options);
+
+            // Marker position
+            const markerPosition = { lat: 18.5679, lng: 73.9864 };
+
+            // Create a marker
+            const marker = new google.maps.Marker({
+                position: markerPosition,
+                map: map,
+                title: "Gat No. 1278, Near Panchshil Towers, Wagholi, Pune, Maharashtra 412207"
+            });
+
+            // Info window with address
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="font-size: 16px;">
+                        <strong>Address:</strong><br>
+                        Gat No. 1278,<br>
+                        Near Panchshil Towers,<br>
+                        Wagholi, Pune, Maharashtra 412207
+                    </div>
+                `
+            });
+
+            // Open info window when marker is clicked
+            marker.addListener('click', () => {
+                infoWindow.open(map, marker);
+            });
+
+            // Automatically open info window on load
+            infoWindow.open(map, marker);
+        }
+    </script>
 <script 
     async
     defer
@@ -1878,7 +1909,136 @@ footer {
     z-index: 91;
     position: relative;
 }
+.welcomebanner {
+    top: 0;
+    display: flex;
+    align-items: center;
+}
 
+.js-toggle-menu span {
+    background: #ffffff;
+}
+.locationfindersec {
+    padding-top: 40px;
+}
+
+.locationfindersec h2.js-t-animation.pt-120.s\:pt-0.pb-10.text-50.s\:text-80.font-heading.leading-none.tracking-\[-0\.03em\].max-w-\[30rem\].s\:max-w-full {
+    max-width: 100%;
+    padding-top: 30px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.locationfindersec h2.js-t-animation.pt-120.s\:pt-0.pb-10.text-50.s\:text-80.font-heading.leading-none.tracking-\[-0\.03em\].max-w-\[30rem\].s\:max-w-full .line {
+    text-align: center !important;
+    font-size: 34px;
+}
+
+.locationfindersec .uppercase.text-25.flex {
+    justify-content: center;
+}
+
+.locationfindersec .pdtextleft.txt.pr-20.s\:pr-100.pl-40.s\:pl-0 {
+    text-align: center;
+}
+
+svg.quoteicon {
+    height: 60px;
+}
+.contactfix {
+    font-size: 16px;
+    width: 140px;
+}
+.featureamentities h2 {
+    padding-top: 15px;
+}
+.reviewcontent  .col-span-12.mt-auto.s\:mt-0.s\:pr-0.relative.pl-60.pt-60 {
+    padding-left: 0px;
+}
+
+.reviewcontent  .text-100.s\:text-100.leading-\[1\.2\].s\:leading-\[1\.2\].font-heading.mb-0.tracking-\[-0\.03em\].js-text-reavel.text-center {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.varianttabs.aminitiessec.relative.bg-white.w-full.mt-auto.pt-72 {
+    padding-top: 10px;
+}
+
+.varianttabs.aminitiessec.relative.bg-white.w-full.mt-auto.pt-72 h2.js-t-animation.pt-120.s\:pt-0.pb-10.text-50.s\:text-80.text-center.font-heading.leading-none.tracking-\[-0\.03em\].max-w-\[30rem\].s\:max-w-full {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 35px;
+}
+
+.varianttabs.aminitiessec.relative.bg-white.w-full.mt-auto.pt-72 .pdtextleft.txt.pr-20.s\:pr-100.pl-40.s\:pl-0.text-center {
+    padding: 0 20px !important;
+}
+
+#Aminities .relative.bg-white.w-full.overflow-hidden.pt-20.s\:pt-100.px-60 {
+    padding: 0;
+}
+
+#Aminities .relative.bg-white.w-full.overflow-hidden.pt-20.s\:pt-100.px-60 .slide {
+    width: 96% !important;
+}
+
+.interiorplatesinnr .tabitem .tab {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.interiorplatesinnr ul.tabs {
+    padding-top: 0;
+}
+
+.enquirybox {
+    padding-top: 40px;
+}
+
+.enquirybox h2.text-50.s\:text-50.text-white.text-left.px-60 {
+    padding: 0 1rem;
+}
+
+.enquirybox .col-span-12.s\:col-span-6.px-60 {
+    padding: 0;
+}
+
+.enquirybox .col-span-12.s\:col-span-6.px-60 .input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer.w-full.bg-face.relative.text-white.overflow-hidden.is-light.flex.flex-col.h-screen.s\:h-auto {
+    height: auto !important;
+}
+
+footer.w-full.bg-face.relative.text-white.overflow-hidden.is-light.flex.flex-col.h-screen.s\:h-auto .buttonsubmit.mt-50.mb-50.text-center {
+    margin-top: 20px;
+}
+
+.footerright {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+ul.flex.footermenu {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.slide-item img {
+    object-fit: contain !important;
+    object-position: center !important;
+    bottom: 0;
+}
+
+.slide-item  figure.overflow-hidden.h-full.min-h-\[32rem\].max-h-\[32rem\].s\:min-h-\[80rem\].s\:max-h-\[80rem\].relative.js-image-scale {min-height: 600px;}
 }
 .nav-inner svg, .nav-inner svg path, .nav-inner ul li a {
     fill: #fff !important;
