@@ -64,22 +64,22 @@
       <nav class="hidden s:block">
          <ul class="uppercase text-17 flex gap-x-28">
             <li>
-               <a data-link="walkthroughs" class="relative pointer-events-auto flex justify-center " href="javascript:;">
+               <a class="walkthroughs relative pointer-events-auto flex justify-center " href="javascript:;">
                   <span>Walkthrough</span>
                </a>
             </li>
             <li>
-               <a data-link="amenitiess" class="relative pointer-events-auto flex justify-center " href="javascript:;">
+               <a class="amenitiess relative pointer-events-auto flex justify-center " href="javascript:;">
                   <span>Amenities</span>
                </a>
             </li>
             <li>
-               <a data-link="variantss" class="relative pointer-events-auto flex justify-center " href="javascript:;">
+               <a class="variantss relative pointer-events-auto flex justify-center " href="javascript:;">
                   <span>Variants</span>
                </a>
             </li>
             <li>
-               <a data-link="enquires" class="relative pointer-events-auto flex justify-center " href="javascript:;">
+               <a class="enquires relative pointer-events-auto flex justify-center " href="javascript:;">
                   <span>ENQUIRE</span>
                </a>
             </li>
@@ -97,22 +97,22 @@
                </a>
             </li>
             <li class="w-full">
-               <a data-link="walkthroughs" class="relative pointer-events-auto flex" href="javascript:;">
+               <a class="walkthroughs relative pointer-events-auto flex" href="javascript:;">
                <span>Walkthrough</span>
                </a>
             </li>
             <li class="w-full">
-               <a data-link="amenitiess" class="relative pointer-events-auto flex " href="javascript:;">
+               <a class="amenitiess relative pointer-events-auto flex " href="javascript:;">
                <span>Amenities</span>
                </a>
             </li>
             <li class="w-full">
-               <a data-link="variantss"  class="relative pointer-events-auto flex " href="javascript:;">
+               <a  class="variantss relative pointer-events-auto flex " href="javascript:;">
                <span>Variants</span>
                </a>
             </li>
             <li class="w-full">
-               <a data-link="enquires" class="relative pointer-events-auto flex " href="javascript:;">
+               <a class="enquires relative pointer-events-auto flex " href="javascript:;">
                <span>ENQUIRE</span>
                </a>
             </li>
@@ -1705,22 +1705,6 @@
             'slow');
       });
    });
-   $("header ul li a").click(function (e) {
-       e.preventDefault(); // Prevent default anchor behavior
-
-       // Get the value of the 'data-link' attribute
-       var target = $(this).data("link");
-
-       // Scroll to the target section
-       $('html, body').animate({
-           scrollTop: $("." + target).offset().top
-       }, 'slow');
-
-       // Add 'active' class to the clicked link and remove it from others
-       $("header ul li a").removeClass("active");
-       $(this).addClass("active");
-   });
-
 </script>
 <script>
    $('.fillslider').slick({
