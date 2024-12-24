@@ -1689,17 +1689,22 @@
     // Get the value of the 'data-link' attribute
     var target = $(this).data("link");
 
-    // Scroll to the target section
-    $('html, body').animate({
-        scrollTop: $("." + target).offset().top
-    }, 'slow');
+    // Ensure the target section exists
+    if ($("." + target).length) {
+        // Scroll to the target section
+        $('html, body').animate({
+            scrollTop: $("." + target).offset().top
+        }, 'slow');
 
-    // Add 'active' class to the clicked link and remove it from others
-    $("header ul li a").removeClass("active");
-    $(this).addClass("active");
+        // Add 'active' class to the clicked link and remove it from others
+        $("header ul li a").removeClass("active");
+        $(this).addClass("active");
 
-    // Update the URL hash without reloading the page
-    history.pushState(null, null, "#" + target);
+        // Update the URL hash without reloading the page
+        history.pushState(null, null, "#" + target);
+    } else {
+        console.error("Target section not found:", target);
+    }
 });
 
 
