@@ -1683,43 +1683,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 <script>
-   $(document).ready(function () {
-      $(".walkthroughs").click(function() {
-         $('html,body').animate({
-            scrollTop: $(".walkthrough").offset().top},
-            'slow');
-      });
-      $(".amenitiess").click(function() {
-         $('html,body').animate({
-            scrollTop: $(".amenities").offset().top},
-            'slow');
-      });
-      $(".variantss").click(function() {
-         $('html,body').animate({
-            scrollTop: $(".variants").offset().top},
-            'slow');
-      });
-      $(".enquires").click(function() {
-         $('html,body').animate({
-            scrollTop: $(".enquire").offset().top},
-            'slow');
-      });
-   });
    $("header ul li a").click(function (e) {
-       e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault(); // Prevent default anchor behavior
 
-       // Get the value of the 'data-link' attribute
-       var target = $(this).data("link");
+    // Get the value of the 'data-link' attribute
+    var target = $(this).data("link");
 
-       // Scroll to the target section
-       $('html, body').animate({
-           scrollTop: $("." + target).offset().top
-       }, 'slow');
+    // Scroll to the target section
+    $('html, body').animate({
+        scrollTop: $("." + target).offset().top
+    }, 'slow');
 
-       // Add 'active' class to the clicked link and remove it from others
-       $("header ul li a").removeClass("active");
-       $(this).addClass("active");
-   });
+    // Add 'active' class to the clicked link and remove it from others
+    $("header ul li a").removeClass("active");
+    $(this).addClass("active");
+
+    // Update the URL hash without reloading the page
+    history.pushState(null, null, "#" + target);
+});
+
 
 </script>
 <script>
