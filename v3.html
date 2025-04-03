@@ -1715,6 +1715,7 @@
     let map;
     let villaMarker;
     let categoryMarkers = {}; // Object to store category-specific markers
+    let geocoder; // Geocoder instance
 
     function initMap() {
         const villaLocation = { lat: 18.5959, lng: 73.6506 }; // Villas location
@@ -1724,6 +1725,8 @@
             zoom: 13,
             center: villaLocation
         });
+
+        geocoder = new google.maps.Geocoder(); // Initialize geocoder
 
         // Add marker for villa location
         villaMarker = new google.maps.Marker({
@@ -1777,16 +1780,31 @@
         // Store the marker in the categoryMarkers object
         categoryMarkers[category] = marker;
 
-        // Info window for selected place
-        const infoWindow = new google.maps.InfoWindow({
-            content: `<div style="font-size: 14px;">
-                        <strong>${title}</strong><br>
-                        Latitude: ${lat.toFixed(4)}, Longitude: ${lng.toFixed(4)}
-                      </div>`
-        });
+        // Get the address using reverse geocoding
+        geocoder.geocode({ location: selectedLocation }, (results, status) => {
+            if (status === "OK") {
+                if (results[0]) {
+                    const address = results[0].formatted_address;
 
-        marker.addListener('click', () => {
-            infoWindow.open(map, marker);
+                    // Create an info window with the proper address
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: `<div style="font-size: 14px;">
+                                    <strong>${title}</strong><br>
+                                    ${address}
+                                  </div>`
+                    });
+
+                    infoWindow.open(map, marker);
+
+                    marker.addListener('click', () => {
+                        infoWindow.open(map, marker);
+                    });
+                } else {
+                    console.error("No results found");
+                }
+            } else {
+                console.error("Geocoder failed due to: " + status);
+            }
         });
 
         // Adjust map bounds to fit all active markers
@@ -1808,6 +1826,7 @@
         }
     }
 </script>
+
 
 
 <script 
