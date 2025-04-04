@@ -1867,7 +1867,7 @@
                 villaMarker.getPosition(),
                 marker.getPosition()
             );
-            const distanceKm = (distance / 1000).toFixed(2);
+            const distanceKm = (distance / 3000).toFixed(2);
 
             if (distanceInfoWindow) {
                 distanceInfoWindow.close();
@@ -1964,6 +1964,16 @@
 
 </script>
 <script>
+   $(document).ready(function () {
+     $('.category-select').on('change', function () {
+       const category = $(this).data('category');
+       const value = $(this).val();
+
+       // Replace this with your custom logic
+       console.log(`Selected ${value} in category ${category}`);
+     });
+   });
+
    $('.fillslider').slick({
       dots: false,
       arrows: true,
