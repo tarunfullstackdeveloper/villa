@@ -1767,14 +1767,14 @@
 </div>    
 <script type="text/javascript" src="dist/app-f1a7d0c2235b21cbe978.js"></script>
 <script>
-    let map;
+   let map;
         let villaMarker;
         let categoryMarkers = {};
         let lineBetweenPoints;
         let distanceInfoWindow;
 
         function initMap() {
-            const villaLocation = { lat: 18.5959, lng: 73.6506 }; // Villa location
+            const villaLocation = { lat: 18.5959, lng: 73.6506 };
 
             map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 12,
@@ -1798,7 +1798,6 @@
 
             villaInfoWindow.open(map, villaMarker);
 
-            // Listen to dropdown changes
             document.querySelectorAll('.listslide select').forEach(select => {
                 select.addEventListener('change', function () {
                     const category = select.getAttribute('data-category');
@@ -1817,7 +1816,6 @@
         function updateMap(lat, lng, title, category, address) {
             const selectedLocation = { lat, lng };
 
-            // Remove previous marker for this category
             if (categoryMarkers[category]) {
                 categoryMarkers[category].setMap(null);
             }
@@ -1847,9 +1845,16 @@
                 lineBetweenPoints.setMap(null);
             }
 
-            // Draw line
+            // Draw more zigzag line
+            const zigzagPath = getZigzagPath(
+                villaMarker.getPosition().toJSON(),
+                selectedLocation,
+                12,    // More segments = more zigzag
+                0.004  // Bigger offset = more deviation
+            );
+
             lineBetweenPoints = new google.maps.Polyline({
-                path: [villaMarker.getPosition(), selectedLocation],
+                path: zigzagPath,
                 geodesic: true,
                 strokeColor: "#FF0000",
                 strokeOpacity: 1.0,
@@ -1864,12 +1869,10 @@
             );
             const distanceKm = (distance / 1000).toFixed(2);
 
-            // Remove previous distance InfoWindow
             if (distanceInfoWindow) {
                 distanceInfoWindow.close();
             }
 
-            // Show distance
             distanceInfoWindow = new google.maps.InfoWindow({
                 content: `<div style="font-size: 14px;">
                             Distance from Villa: <strong>${distanceKm} km</strong>
@@ -1900,6 +1903,27 @@
             if (hasMarkers) {
                 map.fitBounds(bounds);
             }
+        }
+
+        function getZigzagPath(start, end, segments = 12, offset = 0.004) {
+            const path = [];
+            const latDiff = (end.lat - start.lat) / segments;
+            const lngDiff = (end.lng - start.lng) / segments;
+
+            for (let i = 0; i <= segments; i++) {
+                let lat = start.lat + latDiff * i;
+                let lng = start.lng + lngDiff * i;
+
+                // Apply zigzag offset
+                if (i % 2 !== 0 && i !== segments) {
+                    lat += (Math.random() > 0.5 ? 1 : -1) * offset;
+                    lng += (Math.random() > 0.5 ? 1 : -1) * offset;
+                }
+
+                path.push({ lat, lng });
+            }
+
+            return path;
         }
 </script>
 
