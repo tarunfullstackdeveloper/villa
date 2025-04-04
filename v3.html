@@ -1767,6 +1767,21 @@
 </div>    
 <script type="text/javascript" src="dist/app-f1a7d0c2235b21cbe978.js"></script>
 <script>
+  document.querySelectorAll('.listingslider').forEach(slider => {
+    const selects = slider.querySelectorAll('select');
+
+    selects.forEach(select => {
+      select.addEventListener('change', function () {
+        selects.forEach(otherSelect => {
+          if (otherSelect !== this) {
+            otherSelect.selectedIndex = 0; // Reset others inside the same .listingslider
+          }
+        });
+      });
+    });
+  });
+</script>
+<script>
    let map;
         let villaMarker;
         let categoryMarkers = {};
