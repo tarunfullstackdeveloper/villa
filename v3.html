@@ -1763,7 +1763,7 @@
 </div>
 <div class="fixed inset-0 z-[100] pointer-events-none js-pe"></div>
 <div class="contactfix">
-    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    <a href="javascript:;"><i class="fa fa-phone" aria-hidden="true"></i></a>
 </div>    
 <script type="text/javascript" src="dist/app-f1a7d0c2235b21cbe978.js"></script>
 <script>
@@ -2567,5 +2567,15 @@ header ul li a.active {
    }
 }
 </style>
+      <script>
+  $(document).ready(function () {
+    $('.contactfix').click(function (e) {
+      e.preventDefault(); // agar anchor tag ho
+      $('html, body').animate({
+        scrollTop: $('.enquire').offset().top
+      }, 800); // 800ms = smooth scroll
+    });
+  });
+</script>
 </body>
 </html>
